@@ -30,7 +30,7 @@ par(mfrow = c(2,2))    # Set 2x2 graph layout
         ylab = "Global Active Power"
     )
 
-    # Plot Voltage
+# Plot Voltage
     plot(
         epc$DateTime,
         epc$Voltage,
@@ -53,14 +53,14 @@ par(mfrow = c(2,2))    # Set 2x2 graph layout
     points(epc$DateTime, epc$Sub_metering_3, type = "l", col = "blue")     # Add third sub meter
     
     # Add legend
-    legend(
-        "topright",
-        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-        col = c("red", "green", "blue"),
-        lty = 1,
-        bty = "n",
-        cex = 0.9
-    )
+        legend(
+            "topright",
+            legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
+            col = c("red", "green", "blue"),
+            lty = 1,
+            bty = "n",
+            cex = 0.9
+        )
 
 # Plot Global Reactive Power
     plot(
